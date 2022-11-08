@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration Form</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <h1>Student Registration Form</h1>
+        <p>Fill out the form carefully for registration</p>
+        <hr>
+        <form action="">
+            <p>Personal Information</p>
+            <fieldset>
+                <p>About Student</p>
+                <hr>
+                <label for="full-name">Full Name <input id="full-name" name="full-name" type="text" placeholder="Enter your full name" required></label>
+                <label for="birthdate">Birth Date <input id="birthdate" name="birthdate" type="date" required></label>
+                <label for="gender">Gender 
+                    <select id="gender" name="gender">
+                        <option value="">Please select your gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Non-binary</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+                <hr>
+                <br>
+                <p>Address:</p>
+                <hr>
+                <label for="address1">Street Address <input id="address1" type="text" name="address1"  placeholder="Insert your address here" required></label>
+                <label for="address2">Street Address Line 2 <input type="text" name="address2" id="address2" placeholder="Optional"></label>
+                <label for="city">City <input type="text" id="city" name="city" placeholder="Which city do you live at?" required></label>
+                <label for="state">State/Province <input type="text" id="state" name="state" required></label>
+            </fieldset>
+            <fieldset>
+                <p>Contact Information</p>
+                <hr>
+                
+            </fieldset>
+        </form>
+    </body>
+</html>
