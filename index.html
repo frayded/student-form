@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Student Registration Form</h1>
-        <p>Fill out the form carefully for registration</p>
+        <p>Fill out the form carefully for the after-school study program</p>
         <hr>
         <form action="">
             <p>Personal Information</p>
@@ -36,11 +36,29 @@
                 <label for="city">City <input type="text" id="city" name="city" placeholder="Which city do you live at?" required></label>
                 <label for="state">State/Province <input type="text" id="state" name="state" required></label>
             </fieldset>
+
             <fieldset>
                 <p>Contact Information</p>
                 <hr>
-                
+                <label for="email">Email <input type="text" id="email" name="email" placeholder="Fill in your active email address" required></label>
+                <label for="phone-number">Phone Number <input type="text" id="phone-number" name="phone-number" placeholder="Fill in your phone number we can contact" required></label>
             </fieldset>
+
+            <fieldset>
+                <p>Have you joined our program before?</p>
+                <label for="program-yes"><input type="radio" id="program-yes" name="program-participation" checked> Yes</label>
+                <label for="program-no"><input type="radio" id="program-no" name="program-participation"> No</label>
+
+                <p>Course(s) you would like to learn better: </p>
+                <label for="math"><input type="checkbox" id="math" name="course"> Math</label>
+                <label for="economics"><input type="checkbox" id="economics" name="course"> Economics</label>
+                <label for="history"><input type="checkbox" id="history" name="course"> History</label>
+                <label for="sociology"><input type="checkbox" id="sociology" name="course"> Sociology</label>
+
+                <label for="bio">Provide a bio <textarea name="bio" id="bio" cols="30" rows="5" placeholder="About you and why do you want to join this program?"></textarea></label>
+            </fieldset>
+            
+            <input type="submit" id="submit">
         </form>
     </body>
 </html>
