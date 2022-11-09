@@ -14,10 +14,11 @@
             <form action="" method="post" id="survey-form">
                 <fieldset>
                     <h2>About Student</h2>
-                    <label for="name">Full Name <input id="name" name="name" type="text" placeholder="Enter your full name" required></label>
+                    <label for="name" id="name-label">Full Name <input id="name" name="name" type="text" placeholder="Enter your full name" required></label>
                     <label for="birthdate">Birth Date <input id="birthdate" name="birthdate" type="date" required></label>
+                    <label for="number" id="number-label">Age <input type="number" id="number" name="age" min="15" max="28" placeholder="Enter your age"></label>
                     <label for="gender">Gender 
-                        <select id="gender" name="gender">
+                        <select id="dropdown" name="gender">
                             <option value="">Please select your gender</option>
                             <option value="1">Male</option>
                             <option value="2">Female</option>
@@ -34,20 +35,20 @@
 
                 <fieldset>
                     <h2>Contact Information</h2>
-                    <label for="email">Email <input type="text" id="email" name="email" placeholder="Fill in your active email address" required></label>
+                    <label for="email" id="email-label">Email <input type="email" id="email" name="email" placeholder="Fill in your active email address" required></label>
                     <label for="phone-number">Phone Number <input type="text" id="phone-number" name="phone-number" placeholder="Fill in your phone number we can contact" required></label>
                 </fieldset>
 
                 <fieldset>
                     <p>Have you joined our program before?</p>
-                    <label for="program-yes"><input type="radio" id="program-yes" name="program-participation" class="inline" checked> Yes</label>
-                    <label for="program-no"><input type="radio" id="program-no" name="program-participation" class="inline"> No</label>
+                    <label for="program-yes"><input type="radio" id="program-yes" name="program-participation" class="inline" value="yes" checked> Yes</label>
+                    <label for="program-no"><input type="radio" id="program-no" name="program-participation" class="inline" value="no"> No</label>
 
                     <p>Course(s) you would like to learn better?</p>
-                    <label for="math"><input type="checkbox" id="math" name="course" class="inline"> Math</label>
-                    <label for="economics"><input type="checkbox" id="economics" name="course" class="inline"> Economics</label>
-                    <label for="history"><input type="checkbox" id="history" name="course" class="inline"> History</label>
-                    <label for="sociology"><input type="checkbox" id="sociology" name="course" class="inline"> Sociology</label>
+                    <label for="math"><input type="checkbox" id="math" name="course" class="inline" value="math"> Math</label>
+                    <label for="economics"><input type="checkbox" id="economics" name="course" class="inline" value="economics"> Economics</label>
+                    <label for="history"><input type="checkbox" id="history" name="course" class="inline" value="history"> History</label>
+                    <label for="sociology"><input type="checkbox" id="sociology" name="course" class="inline" value="sociology"> Sociology</label>
                     <br>
                     <label for="bio">Provide a bio <textarea name="bio" id="bio" cols="30" rows="5" placeholder="About you and why do you want to join this program?"></textarea></label>
                 </fieldset>
